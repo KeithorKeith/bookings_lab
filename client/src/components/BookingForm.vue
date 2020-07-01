@@ -17,8 +17,12 @@
       </form>
   </div>
 </template>
+ 
 
 <script>
+import { eventBus } from './main.js'
+import BookingServices from './services/BookingService.js'
+
 export default {
     data() {
         return {
@@ -28,7 +32,9 @@ export default {
         }
     },
     method: {
-        handleBooking: function
+        handleBooking: function(event) {
+            event.preventDefault();
+        }
     }
 }
 </script>
