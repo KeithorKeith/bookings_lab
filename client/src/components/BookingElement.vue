@@ -9,8 +9,18 @@
 </template>
 
 <script>
-export default {
+import { eventBus } from '../main.js'
+import BookingService from '../services/BookingService.js'
 
+export default {
+    name: 'booking-element',
+    props: ['booking'],
+    methods: {
+        deleteBooking(){
+            BookingService.deleteBooking(this.booking._id)
+            .then(() => eventBus.$emit('booking-deleted', this.booking._id))
+        }
+    }
 }
 </script>
 

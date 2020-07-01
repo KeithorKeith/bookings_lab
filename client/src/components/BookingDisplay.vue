@@ -10,6 +10,7 @@ import BookingElement from './BookingElement.vue'
 import BookingService from '../services/BookingService'
 
 export default {
+    name: 'booking-display',
     props: ['bookings'],
     components: {
         'booking-element': BookingElement

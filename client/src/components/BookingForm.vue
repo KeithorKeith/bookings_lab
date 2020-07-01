@@ -24,6 +24,7 @@ import { eventBus } from './main.js'
 import BookingServices from './services/BookingService.js'
 
 export default {
+    name: 'booking-form',
     data() {
         return {
             name: "",
