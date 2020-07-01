@@ -13,8 +13,8 @@ db.bookings.insertMany([
         checkedIn: true
     },
     {
-        name: "Yoshi Mario",
-        email: "yahooitsame@weehee.org",
+        name: "Mario Mario",
+        email: "itsame@yahoo.org",
         checkedIn: true
     }
 ]);
