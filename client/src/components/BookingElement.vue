@@ -17,8 +17,8 @@ export default {
     props: ['booking'],
     methods: {
         deleteBooking(){
-            BookingService.deleteBooking(this.booking._id)
-            .then(() => eventBus.$emit('booking-deleted', this.booking._id))
+            // BookingService.deleteBooking(this.booking._id)
+            // .then(() => eventBus.$emit('booking-deleted', this.booking._id))
         }
     }
 }
