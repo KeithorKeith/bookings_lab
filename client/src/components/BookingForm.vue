@@ -1,5 +1,6 @@
 <template lang="html">
   <div>
+      <h1>Hotel Booking Tool</h1>
       <form class="booking-form" v-on:submit="handleBooking">
           <label for="name-field">Enter name:</label>
           <input type="text" id="name-field" v-model="name">
@@ -9,8 +10,8 @@
 
           <label for="checked-in-field">Checked in:</label>
           <select name="checked-in" id="checked-in-field" v-model="checkedIn">
-              <option value="true">Yes</option>
-              <option value="false">No</option>
+              <option :value="true">Yes</option>
+              <option :value="false">No</option>
           </select>
 
           <input type="submit" id="submit-field" value="Submit details" />

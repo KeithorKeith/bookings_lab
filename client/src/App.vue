@@ -23,12 +23,12 @@ export default {
     .then(bookings => this.bookings = bookings);
 
     eventBus.$on('booking-added', (booking) => {
-      this.booking.push(booking)
+      this.bookings.push(booking)
     })
 
     eventBus.$on('booking-deleted', (id) => {
-      const index = this.booking.findIndex(booking => booking._id === id)
-      this.games.splice(index, 1)
+      const index = this.bookings.findIndex(booking => booking._id === id)
+      this.bookings.splice(index, 1)
     })
   },
   components: {
@@ -40,11 +40,12 @@ export default {
 
 <style>
 #app {
+  background: url('./assets/gatsby.jpg');
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: white;
   margin-top: 60px;
 }
 </style>
