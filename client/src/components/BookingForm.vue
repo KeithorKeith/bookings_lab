@@ -1,7 +1,7 @@
 <template lang="html">
   <div>
       <h1>Hotel Booking Tool</h1>
-      <form class="booking-form" v-on:submit="handleBooking">
+      <form class="booking-form" v-on:submit="handleBooking" method="post">
           <label for="name-field">Enter name:</label>
           <input type="text" id="name-field" v-model="name">
 
