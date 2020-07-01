@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
   <div id="app">
     <booking-display :bookings="bookings"></booking-display>
   </div>

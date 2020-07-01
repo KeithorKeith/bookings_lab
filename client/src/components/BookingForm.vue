@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
   <div>
       <form class="booking-form" v-on:submit="handleBooking">
           <label for="name-field">Enter name:</label>
